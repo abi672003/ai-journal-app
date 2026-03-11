@@ -237,7 +237,7 @@ Entry: {journal_entry}"""
             try:
                 client = get_client()
                 response = client.chat.completions.create(
-                    model="llama3-8b-8192",
+                    model="llama-3.3-70b-versatile",
                     messages=[
                         {"role": "system", "content": "You are a thoughtful, minimalist journaling assistant. Be concise, warm, and deeply insightful."},
                         {"role": "user", "content": prompts[analysis_type]}
